@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Static typing in web apps</title>
+
+    <meta name="author" content="Siili">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="./style/siili-theme.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>IntelliJ Tips &amp; Tricks</h1>
+                <small>Tomasz Białecki</small>
+            </section>
+            <section>
+                <h2>Some Facts</h2>
+                <ul>
+                    <li>IntelliJ Community Edition
+                        <ul>
+                            <li>Free for JAVA, Android</li>
+                            <li>No Java EE, Spring, JS</li>
+                        </ul>
+                    </li>
+                    <li>Webstorm
+                        <ul>
+                            <li>JS, Node, Typescript</li>
+                        </ul>
+                    </li>
+                    <li>Android Studio
+                        <ul>
+                            <li>Android</li>
+                        </ul>
+                    </li>
+                    <li>IntelliJ Ultimate Edition
+                        <ul>
+                            <li>Includes Android Studio, Webstorm, Community Edition</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Performance</h2>
+                <p class="fragment">/Applications/IntelliJ IDEA.app/Contents/bin/idea.vmoptions</p>
+            </section>
+            <section>
+                <h2>Keymap &amp; shortcuts</h2>
+                <ul>
+                    <li class="fragment">Key prompter</li>
+                    <li class="fragment">Keymap reference</li>
+                    <li class="fragment">Productivity guide</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Search</h2>
+                <ul>
+                    <li>Shift+Shift</li>
+                    <li>Cmt+Shift+a</li>
+                    <li>Cmt+Shift+a</li>
+                    <li>Cmt+o</li>
+                    <li>Cmt+Shift+o</li>
+                    <li>Cmt+Alt+o</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Language injections</h2>
+            </section>
+            <section>
+                <h2>IDE Talk</h2>
+            </section>
+            <section>
+                <h2>Multitype project</h2>
+            </section>
+            <section>
+                <h2>External Tools</h2>
+            </section>
+            <section>
+                <h2>Git integration</h2>
+            </section>
+            <section>
+                <h2>Live Templates</h2>
+            </section>
+            <section>
+                <h2>Comparing Files</h2>
+            </section>
+            <section>
+                <h2>Presentation Mode</h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
